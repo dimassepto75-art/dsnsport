@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSNSPORT | Sepatu Sepak Bola & Futsal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h2>DSN<span>SPORT.</span></h2>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#pesan">Pemesanan</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-content">
+      <p class="tagline">FOOTBALL & FUTSAL STORE</p>
+      <h1>MAIN LEBIH<br>BERANI.</h1>
+      <p>Temukan sepatu terbaik untuk setiap langkah,
+      sprint, dan gol kemenanganmu.</p>
+      <a href="#produk" class="btn">Jelajahi Produk ↗</a>
+    </div>
+  </section>
+
+  <section class="products" id="produk">
+    <h2>Koleksi <span>DSNSPORT</span></h2>
+    <p class="section-desc">Pilih sepatu sesuai gaya bermainmu.</p>
+
+    <div class="product-container">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=700&q=80" alt="Produk sepatu sepak bola">
+        <h3>DSN Velocity FG</h3>
+        <p>Sepatu Sepak Bola</p>
+        <h4>Rp549.000</h4>
+        <button onclick="pesan('DSN Velocity FG')">Pesan Sekarang</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=700&q=80" alt="Produk sepatu futsal">
+        <h3>DSN Control IC</h3>
+        <p>Sepatu Futsal</p>
+        <h4>Rp429.000</h4>
+        <button onclick="pesan('DSN Control IC')">Pesan Sekarang</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=700&q=80" alt="Perlengkapan olahraga">
+        <h3>DSN Sprint Pro</h3>
+        <p>Sepatu Training</p>
+        <h4>Rp479.000</h4>
+        <button onclick="pesan('DSN Sprint Pro')">Pesan Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <h2>Mengapa DSNSPORT?</h2>
+    <div class="features">
+      <div>
+        <h3>01. Pilihan Produk</h3>
+        <p>Sepatu untuk kebutuhan sepak bola dan futsal.</p>
+      </div>
+      <div>
+        <h3>02. Harga Transparan</h3>
+        <p>Informasi harga ditampilkan dengan jelas.</p>
+      </div>
+      <div>
+        <h3>03. Pesan Praktis</h3>
+        <p>Hubungi toko dengan mudah melalui WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="pesan">
+    <h2>Pesan Sepatu Impianmu</h2>
+    <p>Isi formulir untuk melanjutkan pemesanan.</p>
+
+    <form id="orderForm">
+      <input type="text" id="nama" placeholder="Nama lengkap" required>
+      <input type="tel" id="telepon" placeholder="Nomor WhatsApp" required>
+
+      <select id="produkPilihan" required>
+        <option value="">Pilih produk</option>
+        <option value="DSN Velocity FG">DSN Velocity FG</option>
+        <option value="DSN Control IC">DSN Control IC</option>
+        <option value="DSN Sprint Pro">DSN Sprint Pro</option>
+      </select>
+
+      <select id="ukuran" required>
+        <option value="">Pilih ukuran sepatu</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+      </select>
+
+      <textarea id="catatan" placeholder="Catatan tambahan (opsional)"></textarea>
+
+      <button type="submit">Kirim Pemesanan ↗</button>
+    </form>
+    <p id="pesanStatus"></p>
+  </section>
+
+  <footer>
+    <h2>DSN<span>SPORT.</span></h2>
+    <p>Play with purpose. Own the pitch.</p>
+    <p>&copy; <span id="tahun"></span> DSNSPORT.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
